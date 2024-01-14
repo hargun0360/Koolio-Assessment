@@ -75,12 +75,16 @@ function level1down() {
     targetFloor = 1;
     currentFloor = 0;
     moveElevator(targetFloor);
+  }else if(elevator.offsetTop < 350 && elevator.offsetTop > 200){
+    targetFloor = 0;
+    currentFloor  = 1;
+    moveElevator(targetFloor);
+    setTimeout(() => {
+        level1downbtn.style.borderTop = "30px solid black";
+    }, 1000);
   } else if (elevator.offsetTop < 100) {
     targetFloor = 1;
     currentFloor = 2;
-    moveElevator(targetFloor);
-  } else {
-    currentFloor = 0;
     moveElevator(targetFloor);
   }
 }
