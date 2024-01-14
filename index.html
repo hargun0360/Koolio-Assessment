@@ -1,35 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Elevator Task</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-    <div class="container">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="outer_container">
+        <div class="arrows_container">
+            <div class="arrows">
+                <div class="arrow-down"></div>
+              </div>
+              <div class="arrows">
+                <div class="arrow-down"></div>
+                <div class="arrow-up"></div>
+              </div>
+              <div class="arrows">
+                <div class="arrow-up"></div>
+              </div>
+        </div>
+      <div class="container">
         <div class="elevator">
-            <div class="elevator_text">
-                Elevator
-            </div>
-        </div>  
-        <div class="floor">
-            <div class="level">
-                <b>Level 2</b>
-            </div>
+          <div class="elevator_text">Elevator</div>
         </div>
         <div class="floor">
-            <div class="level">
-                <b>Level 1</b>
-            </div>
+          <div class="level">
+            <b>Level 2</b>
+          </div>
         </div>
         <div class="floor">
-            <div class="level">
-               <b>Level 0 / GL</b> 
-            </div>
+          <div class="level">
+            <b>Level 1</b>
+          </div>
         </div>
+        <div class="floor">
+          <div class="level">
+            <b>Level 0 / GL</b>
+          </div>
+        </div>
+      </div>
     </div>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
